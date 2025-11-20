@@ -1,0 +1,19 @@
+.btn-donation,
+.btn-back,
+.btn-copy {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 1em 1.5em;
+    border-radius: 0 0 30px 0;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-gsap-effect {
+    z-index: -1;
+}

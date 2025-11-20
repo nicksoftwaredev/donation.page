@@ -1,0 +1,74 @@
+@media (max-width: 820px) {
+
+    .transition-text {
+        font-size: 2.5rem;
+    }
+
+    .donation-header {
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .donation-header .logo a {
+        font-size: 1.2rem;
+    }
+
+    .btn-back {
+        padding: 0.8em 1em;
+    }
+
+    .donation-content {
+        padding: 3rem 1.5rem;
+    }
+
+    .donation-intro {
+        margin-bottom: 3rem;
+    }
+
+    .donation-intro h1 {
+        font-size: 2.5rem;
+        min-height: 0;
+        display: inline;
+    }
+
+    .cursor {
+        font-size: 2.5rem;
+    }
+
+    .donation-intro p {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .donation-methods {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .donation-card {
+        padding: 1.5rem;
+    }
+
+    .donation-card h3 {
+        font-size: 2.5rem;
+    }
+
+    .donation-card p {
+        font-size: 1rem;
+    }
+
+    .btn-copy {
+        padding: 1em;
+    }
+
+    /* === Footer Adjustments === */
+    .footer {
+        padding: 3rem 1.5rem;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

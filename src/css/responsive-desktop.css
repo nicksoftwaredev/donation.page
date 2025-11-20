@@ -1,0 +1,51 @@
+@media (max-width: 1440px) {
+
+    header,
+    #home,
+    #about,
+    #campaing,
+    #contact,
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero-text-content>h1 {
+        font-size: 3rem;
+    }
+
+    .about-container {
+        gap: 5rem;
+        align-items: flex-start;
+    }
+
+    .about-container__imgs {
+        max-width: 500px;
+    }
+
+    .about-container__text {
+        margin-left: 4rem;
+        margin-top: -3rem;
+    }
+
+    .about-container__text h2 {
+        font-size: 0.5rem;
+    }
+
+    .about-container__text p {
+        font-size: 0.8rem;
+    }
+
+    .about-container__text h2 {
+        font-size: 3rem;
+    }
+
+    .campaing-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-text h2,
+    .contact-info-wrapper h2 {
+        font-size: 3rem;
+    }
+}
