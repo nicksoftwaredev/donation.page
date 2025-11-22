@@ -27,13 +27,13 @@
     }
 
     .donation-intro h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         min-height: 0;
         display: inline;
     }
 
     .cursor {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .donation-intro p {
@@ -60,9 +60,9 @@
 
     .btn-copy {
         padding: 1em;
+        font-size: 1rem;
     }
 
-    /* === Footer Adjustments === */
     .footer {
         padding: 3rem 1.5rem;
     }

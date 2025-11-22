@@ -10,13 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const getEffectColor = () => {
             const style = window.getComputedStyle(button);
-            // Check if the button has a solid background color
             if (style.backgroundColor && style.backgroundColor !== 'rgba(0, 0, 0, 0)') {
                 isBorderedButton = false;
-                return 'var(--primary-color)'; // Green ripple
+                return 'var(--primary-color)'; 
             }
             isBorderedButton = true;
-            // For bordered buttons, the ripple is also green
             return 'var(--primary-color)';
         };
 
@@ -47,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (isBorderedButton) {
                 gsap.to(button, { color: '#000', duration: 0.3 });
             } else {
-                // For solid buttons, make background transparent and text black
                 gsap.to(button, { backgroundColor: 'transparent', color: '#000', duration: 0.3 });
             }
         });
@@ -62,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (isBorderedButton) {
                 gsap.to(button, { color: 'var(--primary-color)', duration: 0.3 });
             } else {
-                // On mouse leave, revert solid button to its original state
+                
                 const originalTextColor = window.getComputedStyle(button).getPropertyValue('--bg-color') || '#FFF';
                 gsap.to(button, { backgroundColor: 'var(--primary-color)', color: originalTextColor, duration: 0.3 });
             }

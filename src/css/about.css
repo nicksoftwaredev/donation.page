@@ -79,15 +79,14 @@
 .about-container__text p {
     color: var(--subtext-color);
     line-height: 1.6;
-    margin-bottom: 0.1rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
 }
 
 .about-decoration {
     position: absolute;
-    width: 15%; 
-    right: -2%;
+    width: 20%; 
+    right: -10vh;
     top: 0;
     z-index: 0; 
-    opacity: 0.5;
 }

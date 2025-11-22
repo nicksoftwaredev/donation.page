@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     ScrollTrigger.matchMedia({
-        // Animações para Desktop (telas maiores que 999px)
         "(min-width: 1000px)": function () {
             const header = document.querySelector('header');
             const showAnim = gsap.from(header, {
@@ -34,45 +33,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Animações de entrada para Desktop
-            gsap.from('.hero-text-content > *', { opacity: 0, x: -50, duration: 1, stagger: 0.2, delay: 0.3, ease: 'power3.out' });
-            gsap.from('.hero-img', { opacity: 0, x: 50, duration: 1, delay: 0.5, ease: 'power3.out' });
-            gsap.from('.hero-decoration', { opacity: 0, scale: 0, duration: 1, delay: 1, ease: 'elastic.out(1, 0.5)' });
+            gsap.from('.hero-text-content > *', {
+                opacity: 0, x: -50, duration: 1, stagger: 0.2, delay: 0.3, ease: 'power3.out', scrollTrigger: {
+                    trigger: '.hero-text-content',
+                    start: 'top 90%',
+                }
+            });
+            gsap.from('.hero-img', {
+                opacity: 0, x: 50, duration: 1, delay: 0.5, ease: 'power3.out', scrollTrigger: {
+                    trigger: '.hero-img',
+                    start: 'top 90%',
+                }
+            });
+            gsap.from('.hero-decoration', {
+                opacity: 0,
+                scale: 0,
+                duration: 1,
+                delay: 1,
+                ease: 'elastic.out(1, 0.5)',
+                scrollTrigger: { trigger: '.hero-decoration', start: 'top 90%' }
+            });
 
-            // Seção Sobre
             fadeIn('.about-container__imgs img', '#about', "top 70%", 0.2);
             fadeIn('.about-container__text > *', '#about', "top 60%", 0.15);
             fadeIn('.about-decoration', '.about-decoration');
 
-            // Seção Campanha
             fadeIn('.campaing-text > *', '#campaing', "top 80%", 0.2);
             fadeIn('.campaing-arrow', '#campaing');
             fadeIn('.campaing-cards .card-one', '.campaing-cards');
             fadeIn('.campaing-cards .card-two', '.campaing-cards', "top 80%", 0, 0.2);
             fadeIn('.campaing-cards .card-three', '.campaing-cards', "top 80%", 0, 0.4);
 
-            // Seção Contato
             fadeIn('.contact-text > *', '#contact', "top 80%", 0.2);
             fadeIn('.contact-info-wrapper > *', '.contact-info-wrapper', "top 80%", 0.2);
 
-            // Footer
             fadeIn('.footer-decoration', '.footer-decoration');
             fadeIn('.footer-brand > *', '.footer-content-wrapper', "top 95%", 0.2);
             fadeIn('.footer-nav > *', '.footer-content-wrapper', "top 95%", 0.2, 0.2);
             fadeIn('.footer-contact-info > *', '.footer-content-wrapper', "top 95%", 0.2, 0.4);
-            fadeIn('.footer-bottom', '.footer-bottom');
+            fadeIn('.footer-bottom', '.footer-content-wrapper', "bottom bottom");
         },
 
         "(max-width: 999px)": function () {
             const showAnim = gsap.from('header', { yPercent: 0 }).progress(1);
             ScrollTrigger.create({
-                onUpdate: (self) => {
-                    // Mantém o header fixo sem animação de entrada/saída
-                }
+                onUpdate: (self) => {}
             });
 
-            gsap.from('.hero-text-content > *', { opacity: 0, x: -50, duration: 1, stagger: 0.2, delay: 0.3, ease: 'power3.out' });
-            gsap.from('.hero-img', { opacity: 0, x: 50, duration: 1, delay: 0.5, ease: 'power3.out' });
+            gsap.from('.hero-text-content > *', {
+                opacity: 0, x: -50, duration: 1, stagger: 0.2, delay: 0.3, ease: 'power3.out', scrollTrigger: {
+                    trigger: '.hero-text-content',
+                    start: 'top 90%',
+                }
+            });
+            gsap.from('.hero-img', {
+                opacity: 0, x: 50, duration: 1, delay: 0.5, ease: 'power3.out', scrollTrigger: {
+                    trigger: '.hero-img',
+                    start: 'top 90%',
+                }
+            });
 
             fadeIn('.about-container__imgs', '#about', "top 110%");
             fadeIn('.about-container__text > *', '#about', "top 110%", 0.15);

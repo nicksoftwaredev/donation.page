@@ -26,9 +26,10 @@
 
 .footer-decoration img {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
+    top: -15vh;
+    right: -10vh;
+    width: 15%;
+    filter: brightness(0) invert(1);
 }
 
 .footer-content-wrapper {
@@ -83,6 +84,7 @@
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
+    padding-top: 2rem;
     z-index: 1;
 }
 

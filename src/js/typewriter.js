@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let masterTl = gsap.timeline({ repeat: -1 });
 
     texts.forEach(text => {
-        let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1.5 });
-        tl.to("#typewriter-text", { duration: 2, text: text });
-        masterTl.add(tl);
+        masterTl.to("#typewriter-text", { duration: 2, text: text, ease: "none", delay: 1.5 });
+        masterTl.to("#typewriter-text", { duration: 1, text: { value: "", rtl: true }, ease: "none", delay: 1.5 });
     });
 });

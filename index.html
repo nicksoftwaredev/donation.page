@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa do Amor | Doando Esperança</title>
 
-    <!-- reset -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/img/favicon/donation.png" type="image/x-icon">
+
+    <!-- reset stylesheet to remove default browser styles -->
     <link rel="stylesheet" href="./src/css/reset.css">
 
-    <!-- variables -->
+    <!-- css variables for colors, fonts and global settings -->
     <link rel="stylesheet" href="./src/css/variables.css">
 
-    <!-- main styles-->
+    <!-- hero section styles -->
     <link rel="stylesheet" href="./src/css/hero.css">
 
-    <!-- header styles -->
+    <!-- header and navigation bar styles -->
     <link rel="stylesheet" href="./src/css/header.css">
 
     <!-- about section styles -->
     <link rel="stylesheet" href="./src/css/about.css">
 
-    <!-- campaing section styles -->
+    <!-- campaign section styles -->
     <link rel="stylesheet" href="./src/css/campaing.css">
 
     <!-- contact section styles -->
     <link rel="stylesheet" href="./src/css/contact.css">
 
-    <!-- button styles -->
+    <!-- global button styles -->
     <link rel="stylesheet" href="./src/css/button.css">
 
-    <!-- responsive desktop -->
+    <!-- desktop responsive adjustments -->
     <link rel="stylesheet" href="./src/css/responsive-desktop.css">
 
-    <!-- responsive tablet -->
+    <!-- tablet responsive adjustments -->
     <link rel="stylesheet" href="./src/css/responsive-tablet.css">
 
-    <!-- responsive mobile -->
+    <!-- mobile responsive adjustments -->
     <link rel="stylesheet" href="./src/css/responsive-mobile.css">
 
-    <!-- sora font import -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -50,11 +53,13 @@
 
 <body style="background-color: var(--bg-color); font-family: var(--main-font);">
 
+    <!-- header containing logo, navigation links and menu buttons -->
     <header>
         <h1 class="logo">
             <a href="index.html">Casa do Amor</a>
         </h1>
 
+        <!-- desktop navigation bar -->
         <nav class="nav-bar desktop-nav">
             <a href="#home">Início</a>
             <a href="#about">Sobre</a>
@@ -62,6 +67,7 @@
             <a href="#contact">Contato</a>
         </nav>
 
+        <!-- mobile navigation sidebar -->
         <nav class="mobile-nav">
             <div class="nav-close-button">
                 <img src="./src/img/decorations/close-icon.png" alt="Fechar menu">
@@ -72,22 +78,26 @@
             <a href="#contact">Contato</a>
         </nav>
 
-        <a href="index-donation.html" class="btn-donation"><span>
-                Doar Agora</span></a>
+        <!-- donation button in header -->
+        <a href="index-donation.html" class="btn-donation"><span>Doar Agora</span></a>
 
+        <!-- mobile menu open icon -->
         <div class="nav-open-button">
             <img src="./src/img/decorations/menu-icon.png" alt="Abrir menu">
         </div>
     </header>
 
+    <!-- hero section -->
     <section id="home">
         <div class="hero-container">
+
+            <!-- hero text content -->
             <div class="hero-text-content">
-                <h1>
+                <h2>
                     <span>Arrecadação</span> de
                     fundos para as
                     pessoas e causas que são importantes.
-                </h1>
+                </h2>
 
                 <div class="hero-container__subtitle">
                     <p>
@@ -98,23 +108,28 @@
                 </div>
             </div>
 
+            <!-- hero main image and decoration -->
             <div class="hero-img">
-                <img src="./src/img/hero/hero-baby.svg" alt="">
-
-                <div class="hero-decoration">
-                    <img src="./src/img/decorations/decoration.svg" alt="">
-                </div>
+                <img src="./src/img/hero/hero-baby.svg" alt="Bebê sorrindo" width="800" height="600">
             </div>
+        </div>
+
+        <div class="hero-decoration">
+            <img src="./src/img/decorations/decoration.svg" alt="">
         </div>
     </section>
 
+    <!-- about section -->
     <section id="about">
         <div class="about-container">
+
             <div class="about-container__imgs">
-                <img class="about-img-one" src="./src/img/about/kids-img/kid-one.svg" alt="Criança sorrindo">
-                <img class="about-img-two" src="./src/img/about/kids-img/kid-two.svg" alt="Criança brincando">
-                <img class="about-img-three" src="./src/img/about/kids-img/kid-three.svg" alt="Criança pensativa">
+                <img class="about-img-one" src="./src/img/about/kids-img/kid-one.svg" alt="Criança sorrindo" width="385" height="385" loading="lazy" decoding="async">
+                <img class="about-img-two" src="./src/img/about/kids-img/kid-two.svg" alt="Criança brincando" width="412" height="412" loading="lazy" decoding="async">
+                <img class="about-img-three" src="./src/img/about/kids-img/kid-three.svg" alt="Criança pensativa" width="385" height="385" loading="lazy" decoding="async">
             </div>
+
+            <!-- text content describing the institution -->
             <div class="about-container__text">
                 <span>Sobre nós</span>
                 <h2>Nossa maior ambição é ajudar as pessoas!</h2>
@@ -133,39 +148,49 @@
         </div>
 
         <div class="about-decoration">
-            <img src="./src/img/decorations/decoration.svg" alt="">
+            <img src="./src/img/decorations/decoration.svg" alt="Decoração da seção" width="324" height="626" loading="lazy" decoding="async">
         </div>
     </section>
 
+    <!-- campaign section -->
     <section id="campaing">
         <div class="campaing-container">
+
             <div class="campaing-text">
                 <span>Campanha</span>
                 <h2>A Casa do Amor se move quando você ajuda pessoas doando pouco.</h2>
             </div>
-            <a href="index-donation.html" class="campaing-arrow"><img src="./src/img/campaing/arrow.svg"
-                    alt="Doar agora"></a>
+
+            <!-- arrow button linking to donation page -->
+            <a href="index-donation.html" class="campaing-arrow">
+                <img src="./src/img/campaing/arrow.svg" alt="Seta para doar agora" width="28" height="28">
+            </a>
         </div>
 
+        <!-- campaign cards  -->
         <div class="campaing-cards">
+
+            <!-- card 1 -->
             <div class="card-one">
-                <img src="./src/img/campaing/cards-img/card-one-img.svg" alt="">
+                <img src="./src/img/campaing/cards-img/card-one-img.svg" alt="Mãos segurando as mãos de um idoso" width="400" height="250" loading="lazy" decoding="async">
                 <h2>Ajudar Idosos e Crianças</h2>
                 <p>Leve carinho, cuidado e dignidade a quem mais precisa.</p>
                 <hr>
                 <a href="index-donation.html" class="btn-donation">Doar Agora</a>
             </div>
 
+            <!-- card 2 -->
             <div class="card-two">
-                <img src="./src/img/campaing/cards-img/card-two-img.svg" alt="">
+                <img src="./src/img/campaing/cards-img/card-two-img.svg" alt="Voluntário entregando comida" width="400" height="250" loading="lazy" decoding="async">
                 <h2>Apoiar quem mais precisa</h2>
                 <p>Sua ajuda pode ser o alívio em momentos de dor e incerteza.</p>
                 <hr>
                 <a href="index-donation.html" class="btn-donation">Doar Agora</a>
             </div>
 
+            <!-- card 3 -->
             <div class="card-three">
-                <img src="./src/img/campaing/cards-img/card-three-img.svg" alt="">
+                <img src="./src/img/campaing/cards-img/card-three-img.svg" alt="Pessoa recebendo uma doação" width="400" height="250" loading="lazy" decoding="async">
                 <h2>Transformar vidas</h2>
                 <p>Um simples gesto seu pode mudar o destino de alguém.</p>
                 <hr>
@@ -174,50 +199,67 @@
         </div>
     </section>
 
+    <!-- contact section -->
     <section id="contact">
         <div class="contact-text">
+
             <span>Contato</span>
             <h2>Entre em Contato</h2>
             <p>Ficou alguma dúvida? Fale conosco por e-mail, WhatsApp ou telefone. É uma honra tê-lo(a) aqui!</p>
+
             <div class="contact-details">
                 <ul>
                     <li>
-                        <img src="./src/img/contact/whatsapp.png" alt="WhatsApp">
+                        <img src="./src/img/contact/whatsapp.png" alt="WhatsApp" width="28" height="28">
                         <a href="https://wa.me/5577999463319" target="_blank">(77) 99946-3319</a>
                     </li>
                     <li>
-                        <img src="./src/img/contact/gmail.png" alt="E-mail">
+                        <img src="./src/img/contact/gmail.png" alt="E-mail" width="28" height="28">
                         <a href="mailto:casadocancer.vca@hotmail.com">casadocancer.vca@hotmail.com</a>
                     </li>
                     <li>
-                        <img src="./src/img/contact/phone.png" alt="Telefone">
+                        <img src="./src/img/contact/phone.png" alt="Telefone" width="28" height="28">
                         <a href="tel:+557734219660">(77) 3421-9660</a>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <!-- map and address display -->
         <div class="contact-info-wrapper">
             <div class="contact-map-wrapper">
                 <h2>Visite-nos e Contribua</h2>
                 <p class="contact-subtitle">Roupas, alimentos e suprimentos básicos podem ser entregues em nosso
                     endereço.</p>
+
                 <div class="contact-visuals">
                     <div class="contact-map">
+
+                        <!-- embedded google maps iframe showing the institution location -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.253999333502!2d-40.8249786889898!3d-14.86695298595568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x744031045262ce7%3A0x8a3511425958a529!2sR.%20O%2C%2030%20-%20Boa%20Vista%2C%20Vit%C3%B3ria%20da%20Conquista%20-%20BA%2C%2045026-215!5e0!3m2!1spt-BR!2sbr!4v1731608119053!5m2!1spt-BR!2sbr"
-                            width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            height="400" style="width: 100%; border:0; border-radius: 12px;" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="contact-decoration">
+            <img src="./src/img/decorations/decoration.svg" alt="Decoração da seção de contato" width="324" height="626" loading="lazy" decoding="async">
+        </div>
     </section>
 
+    <!-- footer -->
     <footer class="footer">
+
         <div class="footer-decoration">
-            <img src="./src/img/decorations/decoration.svg" alt="Decoration">
+            <img src="./src/img/decorations/decoration.svg" alt="Decoração do rodapé" width="324" height="626" loading="lazy" decoding="async">
         </div>
+
         <div class="footer-content-wrapper">
+
+            <!-- footer logo and slogan -->
             <div class="footer-section footer-brand">
                 <h1 class="logo">
                     <a href="index.html">Casa do Amor</a>
@@ -225,6 +267,7 @@
                 <p>Doando Esperança, Transformando Vidas.</p>
             </div>
 
+            <!-- footer navigation links -->
             <div class="footer-section footer-nav">
                 <h3>Navegação</h3>
                 <ul>
@@ -235,19 +278,20 @@
                 </ul>
             </div>
 
+            <!-- footer contact info -->
             <div class="footer-section footer-contact-info">
                 <h3>Contato</h3>
                 <ul>
                     <li>
-                        <img src="./src/img/contact/whatsapp.png" alt="WhatsApp">
+                        <img src="./src/img/contact/whatsapp.png" alt="WhatsApp" width="24" height="24">
                         <a href="https://wa.me/5577999463319" target="_blank">(77) 99946-3319</a>
                     </li>
                     <li>
-                        <img src="./src/img/contact/gmail.png" alt="E-mail">
+                        <img src="./src/img/contact/gmail.png" alt="E-mail" width="24" height="24">
                         <a href="mailto:casadocancer.vca@hotmail.com">casadocancer.vca@hotmail.com</a>
                     </li>
                     <li>
-                        <img src="./src/img/contact/phone.png" alt="Telefone">
+                        <img src="./src/img/contact/phone.png" alt="Telefone" width="24" height="24">
                         <a href="tel:+557734219660">(77) 3421-9660</a>
                     </li>
                     <li>
@@ -256,24 +300,30 @@
                 </ul>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2025 Casa do Amor. Todos os direitos reservados.</p>
+            <p>© 2025 Casa do Amor. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-
+    <!-- script controlling mobile navigation menu -->
     <script src="./src/js/navBar.js"></script>
 
-
-    <!-- GSAP for button effect -->
+    <!-- gsap library for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-    <!-- GSAP scrolltrigger -->
+    <!-- gsap scroll animation plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+    <!-- button hover animation script -->
     <script src="./src/js/buttonEffect.js"></script>
+
+    <!-- general website animations -->
     <script src="./src/js/animations.js"></script>
+
+    <!-- scroll behavior and effects -->
     <script src="./src/js/scroll.js"></script>
+
 </body>
 
 </html>

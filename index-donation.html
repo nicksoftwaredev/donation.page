@@ -4,61 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Doação | Doe Esperança</title>
+    <title>Página de Doação | Faça a Diferença</title>
 
-    <!-- variables -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/img/favicon/donation.png" type="image/x-icon">
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <!-- css variables for global colors, fonts and reusable tokens -->
     <link rel="stylesheet" href="./src/css/variables.css">
 
-    <!-- main styles -->
+    <!-- main stylesheet for the donation page -->
     <link rel="stylesheet" href="./src/css/index-donation/styles.css">
 
-    <!-- responsive donation -->
+    <!-- responsive rules for mobile and tablet screens -->
     <link rel="stylesheet" href="./src/css/index-donation/responsive-donation.css">
 
-    <!-- footer styles -->
+    <!-- reusable footer styling -->
     <link rel="stylesheet" href="./src/css/footer.css">
 
-    <!-- button styles -->
+    <!-- global button styling -->
     <link rel="stylesheet" href="./src/css/button.css">
 </head>
 
 <body style="margin: 0; font-family: var(--main-font); background-color: var(--bg-color); color: var(--text-color);">
+
+    <!-- transition -->
     <div class="transition-screen">
-        <h2 class="transition-text"><span>Você</span> <span>está</span> <span>fazendo</span> <span>a</span>
-            <span>Diferença!</span>
+        <h2 class="transition-text">
+            <span>Você</span> <span>está</span> <span>fazendo</span> <span>a</span> <span>Diferença!</span>
         </h2>
     </div>
 
+    <!-- wrapper that groups all donation-page elements -->
     <div class="donation-page-wrapper">
+
+        <!-- header  -->
         <header class="donation-header">
-            <h1 class="logo">
-                <a href="index.html">Casa do Amor</a>
-            </h1>
+
+            <a href="index.html">Casa do Amor</a>
+
+            <!-- return to homepage button -->
             <a href="index.html" class="btn-back">Voltar ao Início</a>
         </header>
 
+        <!-- main donation content area -->
         <main class="donation-content">
+
+            <!-- intro text, animated title and paragraph -->
             <div class="donation-intro">
-                <h1 id="typewriter-text"></h1><span class="cursor">_</span>
-                <p>Sua contribuição é a força que nos move. Escolha a melhor forma de doar e ajude a construir um futuro
-                    com mais esperança e dignidade para todos.</p>
+
+                <h1 id="typewriter-text">Faça sua doação</h1>
+                <span class="cursor">_</span>
+
+                <p>
+                    Sua contribuição é a força que nos move. Escolha a melhor forma de doar e ajude a construir um
+                    futuro
+                    com mais esperança e dignidade para todos.
+                </p>
             </div>
 
+            <!-- container with donation method cards -->
             <div class="donation-methods">
+
                 <div class="donation-card">
                     <h3>Doação via PIX</h3>
-                    <p>Use a chave abaixo ou nosos qr-code para doar de forma rápida e segura. Qualquer valor é bem-vindo!</p>
+                    <p>
+                        Use a chave abaixo ou nosso QR Code para doar de forma rápida e segura. Qualquer valor é
+                        bem-vindo!
+                    </p>
+
+                    <!-- pix key block -->
                     <div class="pix-info">
                         <strong>Chave PIX (CNPJ):</strong>
                         <span id="pix-key">10241191/0001-37</span>
                     </div>
+
+                    <!-- button that copies the pix key to the clipboard -->
                     <button class="btn-copy">Copiar Chave</button>
-                    <img src="./src/img/qrcode/qr-code.jpg" alt="">
+
+                    <!-- displayed qr code image for pix donations -->
+                    <img src="./src/img/qrcode/qr-code.jpg" alt="QR Code para doação PIX">
                 </div>
 
+                <!-- donation card: bank transfer -->
                 <div class="donation-card">
                     <h3>Transferência Bancária</h3>
-                    <p>Você também pode contribuir através de depósito ou transferência para nossa conta.</p>
+                    <p>
+                        Você também pode contribuir através de depósito ou transferência para nossa conta.
+                    </p>
+
+                    <!-- bank account information list -->
                     <ul class="bank-info">
                         <li><strong>Banco:</strong> Bradesco</li>
                         <li><strong>Agência:</strong> 3530</li>
@@ -70,11 +107,18 @@
             </div>
         </main>
 
+        <!-- footer section with navigation and contact info -->
         <footer class="footer">
+
+            <!-- decorative element -->
             <div class="footer-decoration">
-                <img src="./src/img/decorations/decoration.svg" alt="Decoration">
+                <img src="./src/img/decorations/decoration.svg" alt="Elemento decorativo">
             </div>
+
+            <!-- main footer content container -->
             <div class="footer-content-wrapper">
+
+                <!-- brand and slogan inside the footer -->
                 <div class="footer-section footer-brand">
                     <h1 class="logo">
                         <a href="index.html">Casa do Amor</a>
@@ -82,6 +126,7 @@
                     <p>Doando Esperança, Transformando Vidas.</p>
                 </div>
 
+                <!-- footer navigation links -->
                 <div class="footer-section footer-nav">
                     <h3>Navegação</h3>
                     <ul>
@@ -92,40 +137,56 @@
                     </ul>
                 </div>
 
+                <!-- footer contact links -->
                 <div class="footer-section footer-contact-info">
                     <h3>Contato</h3>
                     <ul>
                         <li>
-                            <img src="./src/img/contact/whatsapp.png" alt="WhatsApp">
+                            <!-- contact item: whatsapp -->
+                            <img src="./src/img/contact/whatsapp.png" alt="Ícone WhatsApp">
                             <a href="https://wa.me/5577999999999" target="_blank">(77) 99999-9999</a>
                         </li>
                         <li>
-                            <img src="./src/img/contact/gmail.png" alt="E-mail">
+                            <!-- contact item: email -->
+                            <img src="./src/img/contact/gmail.png" alt="Ícone E-mail">
                             <a href="mailto:contato@casadoamor.org">contato@casadoamor.org</a>
                         </li>
                         <li>
-                            <img src="./src/img/contact/phone.png" alt="Telefone">
+                            <!-- contact item: phone -->
+                            <img src="./src/img/contact/phone.png" alt="Ícone Telefone">
                             <a href="tel:+557734444444">(77) 3444-4444</a>
                         </li>
                         <li>
+                            <!-- physical address -->
                             <p>R.O 30 - Boa Vista, Vitória da Conquista - BA, 45055-615</p>
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <!-- bottom copyright -->
             <div class="footer-bottom">
                 <p>&copy; 2025 Casa do Amor. Todos os direitos reservados.</p>
             </div>
         </footer>
     </div>
 
-    <!-- GSAP CDN -->
+    <!-- gsap animation library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- gsap text plugin used for typewriter effect -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 
+    <!-- transition animation script for this page -->
     <script src="./src/js/effectTransitionPageDonation.js"></script>
+
+    <!-- script that copies the pix key to clipboard -->
     <script src="./src/js/keyCopy.js"></script>
+
+    <!-- typewriter animation script for the title -->
     <script src="./src/js/typewriter.js"></script>
+
+    <!-- button hover animation script -->
     <script src="./src/js/buttonEffect.js"></script>
 </body>
 

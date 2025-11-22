@@ -1,13 +1,40 @@
 @media (min-width: 769px) and (max-width: 1024px) {
-    .desktop-nav {
-        display: flex;
+
+    body {
+        position: relative;
+        overflow-x: hidden !important;
     }
 
-    .about-container__imgs {
+    .logo {
+        left: 2.5rem;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .desktop-nav {
         display: none;
     }
 
     .nav-open-button {
+        display: block;
+    }
+
+    header>.btn-donation {
         display: none;
+    }
+
+    #home {
+        padding: 8rem 2rem 4rem;
+    }
+
+    #contact {
+        padding: 6rem 2rem;
+    }
+
+    .contact-info-wrapper {
+        flex-direction: column;
+        gap: 3rem;
     }
 }

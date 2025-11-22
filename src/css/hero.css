@@ -120,13 +120,13 @@ header .btn-donation {
     width: 100%; 
 }
 
-.hero-text-content > h1 { 
+.hero-text-content > h2 { 
     font-size: 4rem;
     color: var(--white);
     max-width: 60%; 
 }
 
-.hero-text-content > h1 span { 
+.hero-text-content > h2 span { 
     color: var(--primary-color);
 }
 
@@ -158,10 +158,9 @@ header .btn-donation {
 }
 
 .hero-decoration {
-    width: 20%;
+    width: 30%;
     position: absolute;
-    right: 0;
+    right: -30vh;
     top: 20vh;
     z-index: -1001;
-    opacity: 0.8;
 }

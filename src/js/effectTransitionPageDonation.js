@@ -1,7 +1,14 @@
-const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
+const tl = gsap.timeline({
+    defaults: { ease: "power4.inOut" },
+    onStart: () => {
+        document.documentElement.style.overflow = 'hidden';
+    },
+    onComplete: () => {
+        document.documentElement.style.overflow = '';
+    }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1️⃣ Texto entra com blur, leve rotação e escala
     tl.from(".transition-text span", {
         y: 80,
         rotationX: -80,
@@ -16,44 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power4.out",
     });
 
-    // 2️⃣ Texto sai com efeito de "explosão suave"
     tl.to(".transition-text span", {
-        y: -100,
-        rotationX: 60,
-        scale: 1.2,
+        y: 100,
         opacity: 0,
-        filter: "blur(10px)",
+        filter: "blur(5px)",
         stagger: {
             amount: 0.5,
-            from: "end",
+            from: "start",
         },
-        duration: 0.6,
-        ease: "power2.inOut",
-    }, "+=0.8");
+        duration: 1.0,
+        ease: "power2.in",
+    }, "+=0.3"); 
 
-    // 3️⃣ Tela sobe suavemente
     tl.to(".transition-screen", {
         yPercent: -100,
         duration: 1.2,
         ease: "power4.inOut",
-    }, "-=0.5");
+    }, "-=0.3");
 
-    // 4️⃣ Conteúdo principal entra com zoom e fade
     tl.fromTo(".donation-page-wrapper",
         {
             y: 40,
-            scale: 0.96,
             autoAlpha: 0,
-            filter: "blur(6px)",
         },
         {
             y: 0,
-            scale: 1,
             autoAlpha: 1,
-            filter: "blur(0px)",
             duration: 1.1,
             ease: "power3.out",
         },
-        "-=0.9"
+        "-=0.6"
     );
 });
